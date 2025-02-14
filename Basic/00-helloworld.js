@@ -15,8 +15,8 @@ en varias líneas
 */
 
 console.log("¡Hola, JavaScript!")
-console.log('¡Hola, JavaScript!')
-console.log(`¡Hola, JavaScript!`)
+console.log('¡Hola, JavaScript! con comilla simple')
+console.log(`¡Hola, JavaScript! con comillas diagonales`)
 
 // console.log("¡Hola, JavaScript!")
 
