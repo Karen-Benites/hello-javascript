@@ -32,6 +32,7 @@ console.log(greeting.includes("Hola")) // Incluye
 console.log(greeting.includes("Brais"))
 console.log(greeting.includes("MoureDev"))
 console.log(greeting.slice(0, 10)) // Sección
+console.log(greeting.substring(0, 10)) // Sección
 console.log(greeting.replace("Brais", "MoureDev")) // Reemplazo
 
 // Template literals (plantillas literales)
