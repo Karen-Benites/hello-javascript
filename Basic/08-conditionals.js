@@ -7,7 +7,7 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=7277
 
 // if (si)
 
-let age = 37
+let age = 10
 
 if (age == 37) {
     console.log("La edad es 37")
@@ -36,7 +36,7 @@ if (age == 37) {
 const message = age == 37 ? "La edad es 37" : "La edad no es 37"
 console.log(message)
 
-// switch
+// switch. Sirve para revisar diferentes condiciones de una MISMA VARIABLE, es util alli
 
 let day = 3
 let dayName
