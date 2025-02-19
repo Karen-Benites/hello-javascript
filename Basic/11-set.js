@@ -29,14 +29,14 @@ mySet.delete("https://moure.dev")
 
 console.log(mySet)
 
-console.log(mySet.delete("Brais"))
-console.log(mySet.delete(4))
+console.log(mySet.delete("Brais")) //devuelve un booleano si encuentra el elemento y lo elimina
+console.log('Another test: ', mySet.delete(4)) //devuelve un false si no encuentra ese elemento
 
 console.log(mySet)
 
 // has
 
-console.log(mySet.has("Moure"))
+console.log(mySet.has("Moure")) // Si Moure esta en el set
 console.log(mySet.has("Brais"))
 
 // size
@@ -52,7 +52,7 @@ console.log(myArray)
 mySet = new Set(myArray)
 console.log(mySet)
 
-// No admite duplicados
+// Los sets No admiten duplicados
 
 mySet.add("braismoure@mouredev.com")
 mySet.add("braismoure@mouredev.com")

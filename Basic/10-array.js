@@ -54,24 +54,25 @@ myArray = []
 
 // push y pop
 
-myArray.push("Brais")
+myArray.push("Brais") // añade un elemento AL FINAL del array
 myArray.push("Moure")
 myArray.push("mouredev")
 myArray.push(37)
 
-console.log(myArray)
+console.log(`Mi array: ${myArray}`)
 
 console.log(myArray.pop()) // Elimina el último y lo devuelve
 myArray.pop()
 
+console.log(`My array with pop 2 times:`)
 console.log(myArray)
 
 // shift y unshift
 
-console.log(myArray.shift())
+console.log(myArray.shift()) //Elimina el primer elemento del array y lo devuelve
 console.log(myArray)
 
-myArray.unshift("Brais", "mouredev")
+myArray.unshift("Brais", "mouredev")//agrega elementos al inicio del array
 console.log(myArray)
 
 // length
@@ -88,15 +89,15 @@ console.log(myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
-let myNewArray = myArray.slice(1, 3)
+let myNewArray = myArray.slice(1, 3) //Divide el array empezando en la posicion 1 y terminando en 3-1 = 2. Extrae los elementos desde la posicion inicial hasta la posicion final SIN INCLUIR INDICE
 
-console.log(myArray)
-console.log(myNewArray)
+console.log('Reset array: ', myArray)
+console.log('New array: ', myNewArray)
 
 // splice
 
-myArray.splice(1, 3)
-console.log(myArray)
+myArray.splice(1, 3) //Elimina elementos desde la posicion inicial hasta la posicion final INCLUIDO
+console.log('Updated with splice: ', myArray)
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
