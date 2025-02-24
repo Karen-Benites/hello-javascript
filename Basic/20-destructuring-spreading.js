@@ -19,6 +19,8 @@ console.log(myName)
 
 // Desestructuración
 
+//permite extraer valores de arrays u objetos y asignarlos a una variable
+
 // Sintaxis arrays
 
 let [myValue0, myValue1, myValue2, myValue3, myValue4] = myArray
@@ -53,7 +55,7 @@ console.log(alias)
 // Sintaxis objects con valores predeterminados
 
 let { name2, age2, alias2, email = "email@email.com" } = person
-console.log(name2) // No existe
+console.log(name2) // No existe porque el nombre de la variable debe ser igual a la clave del objeto, y no hay ninguna clave con name2
 console.log(age2)  // No existe
 console.log(alias2)  // No existe
 console.log(email)

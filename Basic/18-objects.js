@@ -93,8 +93,12 @@ let person4 = {
 console.log(person)
 console.log(person4)
 
-console.log(person == person4)
-console.log(person === person4)
+console.log(person == person4) //no son iguales
+console.log(person === person4) // no son iguales
+
+/* No son iguales porque las propiedades de los objetivos se referencian en memoria con una direccion en memoria DIFERENTE. 
+Cuando comparamos dos objetos, estamos comparando su referencia igual a direccion en memoria, no sus valores 
+Con los otros datos primitivos, sus referencias de propiedades en memoria son iguales a sus valores*/
 
 console.log(person.name == person4.name)
 
