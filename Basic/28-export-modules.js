@@ -5,6 +5,8 @@ Vídeo: https://youtu.be/1glVfFxj8a4?t=21480
 
 // Exportación de módulos
 
+//Son ficheros que podemos usar en otros ficheros
+
 // Funciones
 
 export function add(a, b) {
@@ -36,7 +38,8 @@ export class Circle {
 
 }
 
-// Exportación por defecto
+// Exportación por defecto, solo se puede exportar por defecto una sola cosa, y deben ser clases o funciones. No se pueden exportar propiedades
+//Variables o constantes
 
 export default function substract(a, b) {
     return a - b
