@@ -16,12 +16,15 @@ function processGreeting(greetFunction, name) {
 }
 
 function returnGreeting() {
-    return greet
+    return greet //returnGreeting devuelve la FUNCION greet como VALOR, no ejecuta la función, simplemente la pone
 }
 
 processGreeting(greet, "MoureDev")
-const greet2 = returnGreeting()
-greet2("Brais Moure")
+const greet2 = returnGreeting() //greet2 ahora hace referencia al resultado de la funcion returnGreeting
+
+//como returnGreeting devuelve la funcion greet como valor, ahora greet2 va a ser igual a la funcion greet, haciendo referencia a la funcion como valor
+
+greet2("Brais Moure") //por eso al decir greet2(nombre), estas referenciando a greet(nombre), ya que greet2 tiene como valor la funcion greet
 
 // Arrow functions avanzadas
 
@@ -33,15 +36,23 @@ console.log(multiply(2, 5))
 const handler = {
     name: "Brais",
     greeting: function () {
-        console.log(`Hola, ${this.name}`)
+        console.log(`Hola, ${this.name}`) //El valor de this es handler. this.name = handler.name
+        //this hereda el contexto de su padre, el objeto handler
     },
     arrowGreeting: () => {
-        console.log(`Hola, ${this.name}`)
+        console.log(`Hola, ${this.name}`) //El valor de this es el objeto global window
+        //this.name = window.name
     }
 }
 
 handler.greeting()
 handler.arrowGreeting();
+
+
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+//https://chatgpt.com/c/67c0de2e-8bc8-8004-a43a-76322d9c3982
+//https://medium.com/@ctrlaltmonique/lexical-this-how-this-works-in-arrow-functions-100239be6550
+//https://lenguajejs.com/javascript/funciones/arrow-functions/
 
 // IIFE (Expresión de Función Invocada Inmediatamente)
 
@@ -93,6 +104,7 @@ counter()
 counter()
 
 // Recursividad
+//cuando la funcion se llama a si misma. Se debe delimitar su contexto de ejecucion para que no se caiga en loop infinito
 
 function factorial(n) {
     if (n <= 1) {

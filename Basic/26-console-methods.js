@@ -3,6 +3,8 @@ Clase 42 - Console
 Vídeo: https://youtu.be/1glVfFxj8a4?t=20444
 */
 
+//Estos metodos nos sirven para depurar mejor nuestro codigo, viendo informacion util en consola
+
 // Console
 
 // log
@@ -46,26 +48,23 @@ console.log("Edad: 37")
 console.groupEnd()
 
 // time
+console.info("⏳ Iniciando: Tiempo de ejecución 2");
+console.time("Tiempo de ejecución 2");  // 🔹 Inicia el contador "Tiempo de ejecución 2"
 
-console.time("Tiempo de ejecución 2")
+for (let i = 0; i < 10000; i++) {}  // 🔹 Bucle vacío (se ejecuta pero no hace nada)
 
-for (let i = 0; i < 10000; i++) {
+console.info("⏳ Iniciando: Tiempo de ejecución 1");
+console.time("Tiempo de ejecución 1");  // 🔹 Inicia el contador "Tiempo de ejecución 1"
 
-}
+for (let i = 0; i < 10000; i++) {}  // 🔹 Otro bucle vacío
 
-console.time("Tiempo de ejecución 1")
+console.timeEnd("Tiempo de ejecución 2");  // 🚨 Finaliza "Tiempo de ejecución 2"
+                                          // 🔸 Mide el tiempo desde el primer console.time("Tiempo de ejecución 2")
 
-for (let i = 0; i < 10000; i++) {
+for (let i = 0; i < 10000; i++) {}  // 🔹 Otro bucle vacío
 
-}
-
-console.timeEnd("Tiempo de ejecución 2")
-
-for (let i = 0; i < 10000; i++) {
-
-}
-
-console.timeEnd("Tiempo de ejecución 1")
+console.timeEnd("Tiempo de ejecución 1");  // 🚨 Finaliza "Tiempo de ejecución 1"
+                                          // 🔸 Mide el tiempo desde console.time("Tiempo de ejecución 1")
 
 // assert
 
