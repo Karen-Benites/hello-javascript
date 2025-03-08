@@ -40,7 +40,7 @@ const handler = {
         //this hereda el contexto de su padre, el objeto handler
     },
     arrowGreeting: () => {
-        console.log(`Hola, ${this.name}`) //El valor de this es el objeto global window
+        console.log(`Hola, ${this.name}`) //El valor de this es el objeto global window en las arrow functions
         //this.name = window.name
     }
 }
@@ -64,7 +64,7 @@ handler.arrowGreeting();
     console.log("IIFE con arrow function")
 })();
 
-// Parámetros Rest (...)
+// Parámetros Rest (...) cuando no se cuanto sera el numero de argumentos que pondre
 
 function sum(...numbers) {
     let result = 0
