@@ -140,11 +140,12 @@ console.table(fullstackKaren)
 const coche = {
     marca: "Toyota",
     arrancar() {
-        console.log(`El coche ${this.marca} está arrancando...`);
+        console.log(`El coche ${this.marca} está arrancando...`); //this es coche ya que es el metodo del objeto coche
         setTimeout(() => {
-            console.log(`El coche ${this.marca} ya está en marcha.`);
+            console.log(`El coche ${this.marca} ya está en marcha.`); //this es coche, ya que esta arrow function se creo dentro del contexto de la funcion padre arrancar
         }, 2000);
+        //recordar que las arrow functions asumen el this en el contexto en el que se crearon
     },
 };
 
-coche.arrancar();
+coche.arrancar(); // aqui al invocarlo, this automaticamente toma el valor de coche
