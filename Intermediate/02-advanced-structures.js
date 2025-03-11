@@ -47,6 +47,13 @@ let phrases = ["Hola mundo", "Adiós mundo"]
 let words = phrases.flatMap(phrase => phrase.split(" "))
 console.log(words)
 
+//Sin flat Map
+let words2 = phrases.map(string => string.split(" ")) //primero hago un map, y esta funcion me devolveria un array por cada elemento
+console.log(words2) //[ [ 'Hola', 'mundo' ], [ 'Adiós', 'mundo' ] ]
+
+console.log(words2.flat(1)) // aplano el array resultante
+//[ 'Hola', 'mundo', 'Adiós', 'mundo' ]
+
 // - Ordenación
 
 // sort
@@ -147,4 +154,5 @@ console.log(objectFromMap)
 // Objeto a Map
 
 const mapFromObject = new Map(Object.entries(objectFromMap))
+console.log(Object.entries(objectFromMap))
 console.log(mapFromObject)

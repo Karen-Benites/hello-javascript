@@ -54,14 +54,15 @@ myArray = []
 
 // push y pop
 
-myArray.push("Brais") // añade un elemento AL FINAL del array
-myArray.push("Moure")
+myArray.push("Brais") // añade un elemento AL FINAL del array y devuelve la longitud del nuevo array
+let number = myArray.push("Moure")
+console.log(`My length: ${number}`, myArray)
 myArray.push("mouredev")
 myArray.push(37)
 
 console.log(`Mi array: ${myArray}`)
 
-console.log(myArray.pop()) // Elimina el último y lo devuelve
+console.log(myArray.pop()) // Elimina el último elemento y lo devuelve
 myArray.pop()
 
 console.log(`My array with pop 2 times:`)
