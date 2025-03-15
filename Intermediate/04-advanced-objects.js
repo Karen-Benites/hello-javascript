@@ -8,6 +8,7 @@ Vídeo: https://www.twitch.tv/videos/2379412787?t=00h21m33s
 // - Prototipos y Herencia
 
 // Prototipos
+//A dia de hoy no se usan tanto los prototipos
 
 let person = {
     name: "Brais",
